@@ -65,9 +65,7 @@ class App extends React.Component {
           </Row>
       </Container>
         
-        <FollowerList user={this.state.user} followers={this.state.followers}/>
-
-        
+        <FollowerList followers={this.state.followers}/>
       </div>
     );
   }
