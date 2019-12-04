@@ -20,3 +20,9 @@
 .App-link {
   color: #09d3ac;
 }
+
+.title {
+  font-size: 30px;
+  font-style: bold;
+  color: purple;
+}

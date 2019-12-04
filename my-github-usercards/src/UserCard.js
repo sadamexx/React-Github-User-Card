@@ -11,7 +11,7 @@ const UserCard = (props) => {
         <CardImg top width="100%" src={props.avatar_url} alt="avatar photo" />
           <CardBody>
             <CardTitle>{props.login}</CardTitle>
-              <CardSubtitle>{props.html_url}</CardSubtitle>
+              <CardSubtitle><a href={props.html_url}>{props.html_url}</a></CardSubtitle>
           </CardBody>
       </Card>
     </Col>

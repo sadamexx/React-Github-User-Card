@@ -53,11 +53,11 @@ class App extends React.Component {
             <Card>
               <CardImg top width="100%" src={this.state.user.avatar} alt="avatar photo" />
                   <CardBody>
-                    <CardTitle>{this.state.user.name}</CardTitle>
+                    <CardTitle className="title">{this.state.user.name}</CardTitle>
                     <CardSubtitle>Handle: {this.state.user.handle}</CardSubtitle>
                     <CardSubtitle>Location: {this.state.user.location}</CardSubtitle>
                     <CardSubtitle>Followers: {this.state.user.followers}</CardSubtitle>
-                    <CardSubtitle>Link: {this.state.user.link}</CardSubtitle>
+                    <CardSubtitle>Link: <a href={this.state.user.link}>{this.state.user.link}</a></CardSubtitle>
                     <CardSubtitle>Bio: {this.state.user.bio}</CardSubtitle>
                     </CardBody>
             </Card>
