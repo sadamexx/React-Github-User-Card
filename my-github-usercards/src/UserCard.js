@@ -12,10 +12,7 @@ const UserCard = (props) => {
               <CardBody>
                 <CardTitle>{props.name}</CardTitle>
                 <CardSubtitle>Handle:{props.login}</CardSubtitle>
-                  <CardSubtitle>{props.html_url}</CardSubtitle>
-                  
-                 
-                    
+                <CardSubtitle>{props.html_url}</CardSubtitle>
                 </CardBody>
       </Card>
     </Col>

@@ -3,7 +3,7 @@ import UserCard from "./UserCard";
 import { Container, Row } from "reactstrap";
 
 
-export default function UserList(props) {
+export default function FollowerList(props) {
   
 
   return (
