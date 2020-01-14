@@ -72,21 +72,21 @@ class App extends React.Component {
             avatar: response.data.avatar_url}
         });
       });
-      
       axios
-    .get(`https://api.github.com/users/${this.state.newUser}/followers`)
-    .then(response =>{
-      console.log(response.data);
-      this.setState({ followers: response.data})
-    })
+        .get(`https://api.github.com/users/${this.state.newUser}/followers`)
+        .then(response =>{
+          console.log(response.data);
+          this.setState({ followers: response.data})
+        })
     };
 
   render() {
     return (
       <div className="App">
-        <h1>GitHub User Cards</h1>
+        <h1>GitHub User Search</h1>
         <input
           type="text"
+          placeholder="User Handle"
           value={this.state.newUser}
           onChange={this.handleChanges}
           />
@@ -95,7 +95,7 @@ class App extends React.Component {
           <Row>
           <Col xs="12" s="6" md="4">
             <Card>
-              <h1>Your All Star Coder!</h1>
+              <h1>All Star Coder Found!</h1>
               <CardImg top width="100%" src={this.state.user.avatar} alt="avatar photo" />
                   <CardBody>
                     <CardTitle className="title">{this.state.user.name}</CardTitle>
@@ -109,7 +109,7 @@ class App extends React.Component {
             </Col>
           </Row>
       </Container>
-        <h2>My Followers</h2>
+        <h2>Loyal Followers</h2>
         <FollowerList followers={this.state.followers}/>
       </div>
     );
